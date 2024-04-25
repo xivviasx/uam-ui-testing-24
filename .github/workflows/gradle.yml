@@ -43,7 +43,7 @@ jobs:
       run: ./gradlew clean test --tests runners.Runner
 
     - name: Upload GitHub Pages artifact
-      uses: actions/upload-pages-artifact@v3.0.1
+      uses: actions/upload-pages-artifact@v4.3.3
       with:
         name: test-report
         path: target/cucumber-report/*
